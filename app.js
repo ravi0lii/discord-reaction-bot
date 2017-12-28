@@ -14,6 +14,7 @@ const client = new Discord.Client();
 // On ready
 client.on('ready', () => {
     console.log('Ready.');
+    client.user.setGame('https://github.com/Moquo/discord-reaction-bot')
 });
 
 // On message
@@ -21,6 +22,7 @@ client.on('message', (msg) => {
     // Is the sender a bot? If it is, cancel
     if(msg.author.bot) return;
     // React to the message
+    console.log(msg.member.roles.find(role => []));
     msg.react(config.react_emoji);
 });
 

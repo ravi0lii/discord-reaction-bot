@@ -3,6 +3,8 @@
     "react_emoji": "🐙",
     "rankCheck": {
         "enabled": true,
-        "roleName": "React"
+        "roles": [
+            "React"
+        ]
     }
 }
