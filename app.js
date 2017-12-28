@@ -22,7 +22,7 @@ client.on('message', (msg) => {
     // Is the sender a bot? If it is, cancel
     if(msg.author.bot) return;
     // React to the message
-    console.log(msg.member.roles.find(role => []));
+    if(config.rankCheck.enabled && !(msg.member.roles.find(role => config.rankCheck.roles.includes(role.name)))) return;
     msg.react(config.react_emoji);
 });
 
