@@ -1,4 +1,8 @@
 {
     "token": "TOKEN",
-    "react_emoji": "🐙"
+    "react_emoji": "🐙",
+    "rankCheck": {
+        "enabled": true,
+        "roleName": "React"
+    }
 }
