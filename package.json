@@ -1,0 +1,27 @@
+{
+  "name": "discord-reaction-bot",
+  "version": "0.1.0",
+  "description": "Discord bot which adds reaction to messages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moquo/discord-reaction-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "reaction",
+    "bot"
+  ],
+  "author": "Moquo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Moquo/discord-reaction-bot/issues"
+  },
+  "homepage": "https://github.com/Moquo/discord-reaction-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
