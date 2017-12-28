@@ -21,6 +21,13 @@ client.on('ready', () => {
 client.on('message', (msg) => {
     // Is the sender a bot? If it is, cancel
     if(msg.author.bot) return;
+
+    // Check if information command was called
+    if(msg.content === 'reaction-bot') {
+        // TODO: Print the information
+        return;
+    }
+
     // React to the message
     if(config.rankCheck.enabled && !(msg.member.roles.some(role => config.rankCheck.roles.includes(role.name)))) return;
     msg.react(config.react_emoji);
