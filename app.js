@@ -16,5 +16,13 @@ client.on('ready', () => {
     console.log('Ready.');
 });
 
+// On message
+client.on('message', (msg) => {
+    // Is the sender a bot? If it is, cancel
+    if(msg.author.bot) return;
+    // React to the message
+    msg.react(config.react_emoji);
+});
+
 // Login with bot token
 client.login(config.token);
