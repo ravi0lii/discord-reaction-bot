@@ -24,7 +24,18 @@ client.on('message', (msg) => {
 
     // Check if information command was called
     if(msg.content === 'reaction-bot') {
-        // TODO: Print the information
+        msg.channel.send({
+            embed: {
+                color: 0x37dbd0,
+                author: {
+                    name: client.user.name,
+                    icon_url: client.user.avatarURL
+                },
+                title: 'Reaction bot by Moquo',
+                url: 'https://github.com/Moquo/discord-reaction-bot',
+                description: 'Reaction bot adds reactions to messages'
+            }
+        });
         return;
     }
 
